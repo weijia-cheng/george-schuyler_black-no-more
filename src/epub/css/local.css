@@ -66,3 +66,16 @@ p span.i2{
 	text-indent: -1em;
 }
 /* End verse */
+
+#preface footer p:first-of-type{
+	font-variant: small-caps;
+	text-align: right;
+}
+
+#preface footer p:last-of-type{
+	text-indent: 0;
+}
+
+#preface footer time{
+	font-style: italic;
+}
