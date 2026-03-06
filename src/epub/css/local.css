@@ -67,15 +67,55 @@ p span.i2{
 }
 /* End verse */
 
-#preface footer p:first-of-type{
+/* Begin letters */
+[epub|type~="z3998:salutation"] + p{
+	text-indent: 0;
+}
+
+p[epub|type~="z3998:salutation"]{
 	font-variant: small-caps;
+}
+/* End letters */
+
+.telegram{
+	font-variant: all-small-caps;
+}
+
+header{
+	font-variant: small-caps;
+	margin: 1em;
+	text-align: center;
+}
+
+footer{
+	margin-top: 1em;
 	text-align: right;
 }
 
+#preface footer p:first-of-type{
+	font-variant: small-caps;
+}
+
 #preface footer p:last-of-type{
+	text-align: left;
 	text-indent: 0;
 }
 
 #preface footer time{
 	font-style: italic;
+}
+
+#chapter-1 blockquote,
+#chapter-4 blockquote,
+#chapter-6 blockquote,
+#chapter-12 blockquote:first-of-type{
+	text-align: center;
+}
+
+#chapter-4 blockquote b{
+	text-transform: uppercase;
+}
+
+#chapter-4 blockquote p + p{
+	margin-top: 1em;
 }
