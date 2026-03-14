@@ -62,10 +62,8 @@ p[epub|type~="z3998:salutation"]{
 }
 /* End letters */
 
-.telegram{
-	font-variant: all-small-caps;
-}
-
+.telegram,
+.telegram [epub|type~="z3998:signature"],
 abbr[epub|type~="se:era"]{
 	font-variant: all-small-caps;
 }
